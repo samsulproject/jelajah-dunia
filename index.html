@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asia Explorer — Jelajahi Negara Asia</title>
+
+    <meta
+        name="description"
+        content="Asia Explorer - Jelajahi informasi negara-negara di benua Asia."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">🌏</span>
+                <span>Asia<span class="logo-highlight">Explorer</span></span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#explore">Jelajahi</a>
+                <a href="#about">Tentang</a>
+            </nav>
+
+            <button
+                class="theme-btn"
+                id="themeToggle"
+                aria-label="Ganti tema"
+            >
+                🌙
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <span class="hero-badge">
+                    🌏 ASIA WORLD EXPLORER
+                </span>
+
+                <h1>
+                    Jelajahi
+                    <span>Asia</span>
+                </h1>
+
+                <p>
+                    Temukan negara, budaya, sejarah, bahasa,
+                    makanan khas, dan kekayaan masyarakat
+                    dari seluruh penjuru Asia.
+                </p>
+
+                <a href="#explore" class="hero-btn">
+                    Mulai Menjelajah
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="stats">
+
+            <div class="container stats-grid">
+
+                <div class="stat-card">
+                    <span class="stat-icon">🌏</span>
+                    <div>
+                        <strong id="countryCount">0</strong>
+                        <span>Negara</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">🗺️</span>
+                    <div>
+                        <strong>5</strong>
+                        <span>Subregion</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">🗣️</span>
+                    <div>
+                        <strong>1000+</strong>
+                        <span>Bahasa</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">🍜</span>
+                    <div>
+                        <strong>100+</strong>
+                        <span>Kuliner</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPLORE ================= -->
+
+        <section class="explore section" id="explore">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            DISCOVER ASIA
+                        </span>
+
+                        <h2>
+                            Negara-Negara Asia
+                        </h2>
+
+                        <p>
+                            Pilih negara untuk melihat informasi
+                            lengkap mengenai budaya dan sejarahnya.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- SEARCH -->
+
+                <div class="search-area">
+
+                    <div class="search-box">
+
+                        <span>🔎</span>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Cari negara..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+                    <div class="filter-box">
+
+                        <select id="regionFilter">
+
+                            <option value="all">
+                                Semua Subregion
+                            </option>
+
+                            <option value="Asia Tenggara">
+                                Asia Tenggara
+                            </option>
+
+                            <option value="Asia Timur">
+                                Asia Timur
+                            </option>
+
+                            <option value="Asia Selatan">
+                                Asia Selatan
+                            </option>
+
+                            <option value="Asia Tengah">
+                                Asia Tengah
+                            </option>
+
+                            <option value="Asia Barat">
+                                Asia Barat
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COUNTRY GRID -->
+
+                <div
+                    class="country-grid"
+                    id="countryGrid"
+                ></div>
+
+
+                <!-- EMPTY STATE -->
+
+                <div
+                    class="empty-state"
+                    id="emptyState"
+                    hidden
+                >
+                    <div>🔍</div>
+
+                    <h3>
+                        Negara tidak ditemukan
+                    </h3>
+
+                    <p>
+                        Coba gunakan kata pencarian lain.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about section" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <div class="globe">🌏</div>
+                </div>
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        TENTANG WEBSITE
+                    </span>
+
+                    <h2>
+                        Satu tempat untuk
+                        mengenal Asia.
+                    </h2>
+
+                    <p>
+                        Asia Explorer adalah website eksplorasi
+                        sederhana yang dirancang untuk membantu
+                        pengguna mengenal negara-negara di Asia
+                        melalui informasi budaya, sejarah,
+                        bahasa, masyarakat, dan kuliner.
+                    </p>
+
+                    <div class="feature-list">
+
+                        <div>
+                            <span>✓</span>
+                            Informasi negara
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Sejarah dan budaya
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Bahasa dan suku
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Kuliner khas
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <div class="logo footer-logo">
+                    🌏 Asia<span>Explorer</span>
+                </div>
+
+                <p>
+                    Mengenal Asia, satu negara setiap perjalanan.
+                </p>
+            </div>
+
+            <div class="footer-copy">
+                © <span id="year"></span> Asia Explorer.
+                Dibuat untuk pembelajaran.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div
+        class="modal"
+        id="countryModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Tutup"
+            >
+                ×
+            </button>
+
+            <div
+                class="modal-header"
+                id="modalHeader"
+            ></div>
+
+            <div
+                class="modal-body"
+                id="modalBody"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
